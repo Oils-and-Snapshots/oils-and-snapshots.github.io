@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<style>
+        	:root {
+              --background: #012a4a;
+              --buttonhover: #87ceeb;
+              --fontcolor-white: #ebebeb;
+            }
+        
+        	header {
+            	background-color: var(--background);
+                color: var(--fontcolor-white);
+                padding: 10px;
+                border-radius: 10px 10px 0px 0px;
+                width: 97%;
+                margin: 0 auto;
+                border-bottom-color: black;
+            }
+        	#headerTitle {
+            	text-align: center;
+                font-family: Georgia, Times New Roman, serif;
+            }
+            
+            /* Navbar container */
+            .navbar {
+              overflow: hidden;
+              background-color: var(--background);
+              font-family: Georgia, Times New Roman, serif;
+              margin: 0 auto;
+            }
+
+            /* The dropdown container */
+            .dropdown {
+              float: left;
+              overflow: hidden;
+            }
+
+            /* Dropdown button */
+            .dropdown .dropbtn {
+              font-size: 16px;
+              border: none;
+              outline: none;
+              color: var(--fontcolor-white);
+              padding: 14px 30px;
+              background-color: inherit;
+              font-family: inherit; /* Important for vertical align on mobile phones */
+            }
+
+			/* Button hover */
+            .navbar a:hover, .dropdown:hover .dropbtn {
+              background-color: var(--buttonhover);
+              color: black;
+            }
+            
+            .pagebox {
+                background-color: var(--background);
+                color: var(--fontcolor-white);
+                /* other positioning attributes */
+                /* width: 1250px; */
+                width: 97%;
+                margin: 0 auto;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+              	border-radius: 0px 0px 10px 10px;
+            }
+            
+            .art {
+            	text-align: center;
+                margin: 0 auto;
+            }
+            .caption {
+            	text-align: center;
+                font-family: Georgia, Times New Roman, serif; 
+                color: var(--fontcolor-white);
+            }
+            
+        </style>
+	</head>
+	<body>
+    	<header>
+        	<h1 id="headerTitle">Oils and Snapshots</h1>
+          <div class="navbar">
+              <div class="dropdown">
+                <button onclick="window.location.href='https://google.com';" class="dropbtn">Home</button>
+              </div>
+              <div class="dropdown">
+                <button onclick="window.location.href='https://google.com';" class="dropbtn">Contact</button>
+              </div>
+          </div>
+                  </header>
+        <main class="pagebox">
+        </main>
+        <footer>
+        </footer>
+	</body>
+</html>
